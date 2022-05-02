@@ -175,6 +175,20 @@ html[light-mode="dark"] .socialicon{
 }
 
 
+
+.socialicon.leetcode:after {
+  background-color: #41aff3;
+  box-shadow: var(--leetcode);
+}
+
+.socialicon.leetcode:hover {
+  transform: translateY(-4px);
+  /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16); */
+}
+.socialicon.leetcode:hover:after {
+  /* transform: translate(0) scale(1); */
+}
+
  /*
 ---------------------------
    LINKEDIN MICROANIMATION
