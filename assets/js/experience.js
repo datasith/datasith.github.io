@@ -41,7 +41,7 @@ const exp = [
          <li>Designed custom PCBs and mechanical assemblies using ECAD/CAD software</li>`,
 },
 {
-  title: "PhD Research Scientist, Computer Vision",
+  title: "Research Assistant, Computer Vision",
   cardImage: "assets/images/experience-page/caltech.jpg",
   place: "California Institute of Technology",
   time: "(Sep 2009 - Aug 2012)",
@@ -135,14 +135,15 @@ const mentor = [
     title: "ESP8266 Tips & Tricks",
     subtitle: "ACROBOTIC",
     image: "assets/images/experience-page/esp8266.jpg",
-    desp: "Codebase and accompanying YouTube series with step-by-step guides for practical uses of the ESP8266 SoC.",
+    description: "Codebase and accompanying YouTube series with step-by-step guides for practical uses of the ESP8266 SoC.",
+    link: "https://github.com/datasith/Ai_Tips_ESP8266",
   },
 ];
 
 const showCards3 = () => {
   let output = "";
   mentor.forEach(
-    ({ title, image, subtitle, desp }) =>
+    ({ title, image, subtitle, description, link }) =>
       (output += `  
       <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">
@@ -151,8 +152,8 @@ const showCards3 = () => {
         <div class="blog-slider__content">
           <div class="blog-slider__title">${title}</div>
           <span class="blog-slider__code">${subtitle}</span>
-          <div class="blog-slider__text">${desp}</div>
-          <a href="https://github.com/datasith" class="blog-slider__button">Read More</a>   
+          <div class="blog-slider__text">${description}</div>
+          <a href="${link}" class="blog-slider__button">Read More</a>   
         </div>
       </div>
       `)
