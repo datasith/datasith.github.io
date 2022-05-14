@@ -6,12 +6,20 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
-    title: "Quiz App",
-    cardImage: "assets/images/project-page/quiz.jpg",
-    description: "A quiz app built using basic react.",
+    title: "\"FlyTrax\" (2012)",
+    cardImage: "assets/images/project-page/flytrax.png",
+    description: "High-speed video and motion capture rig for fruit flies.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
     Githublink: "",
+  },  
+  {
+    title: "\"Alice\" (2007)",
+    cardImage: "assets/images/project-page/alice.jpg",
+    description: "An autonomous vehicle built to participate in two DARPA competitions.",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "https://medium.com/@datasith/how-to-fall-in-love-with-computer-vision-4f899ff51ecd",
+    Githublink: "https://murray.cds.caltech.edu/Alice:_Introduction",
   },
 ];
 
