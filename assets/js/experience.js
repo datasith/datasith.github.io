@@ -54,7 +54,7 @@ const exp = [
   cardImage: "assets/images/experience-page/italchacao.jpg",
   place: "Deportivo Italchacao",
   time: "(Sep 2009 - Aug 2012)",
-  desp: `<li>Played as Center Forward in the U17 category with some appearances for the first team</li>`,
+  desp: `<li>Played as Center Forward for the U17 division with some appearances for in first team</li>`,
 },
 ];
 
