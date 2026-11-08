@@ -1,204 +1,610 @@
 <!DOCTYPE html>
-<html lang="en" light-mode="dark">
-
+<html lang="en" data-theme="dark">
 <head>
-    <title>Francisco 'Cisco' Zabala <> @datasith</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="data scientist, computer vision, nlp, machine learning, autonomous vehicles, robotics" />
-    <meta name="description" content="Cisco Zabala's (@datasith) portfolio site." />
-    <!-- Robot.txt -->
-    <meta name="robots" content="index,follow" />
-    <meta name="Googlebot" content="index,follow" />
-    <meta name="AdsBot-Google" content="index,follow" />
-    <meta property="og:site_name" content="https://datasith.github.io/">
-    <meta property="og:title" content="Francisco 'Cisco' Zabala <> @datasith">
-    <meta property="og:description" content="Francisco 'Cisco' Zabala's (@datasith) portfolio site.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://datasith.github.io/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="https://datasith.github.io/">
-    <meta name="application-name" content="Francisco 'Cisco' Zabala <> @datasith" />
-    <meta name="apple-mobile-web-app-title" content="Francisco 'Cisco' Zabala <> @datasith" />
-    <meta name="summary" content="Francisco 'Cisco' Zabala's (@datasith) portfolio site." />
-    <!--For Dark/Light mode Toggle-->
-    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-    <!--Import Google Icon Font-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="assets/css/preloader.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png">
-    <!-- Font awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <script defer src="./assets/js/dynamicTitle.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M11CMZ12Q"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-M11CMZ12Q');
-    </script>
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cisco zabala · @datasith · Applied AI, Projects &amp; Research</title>
+  <meta name="description" content="cisco zabala (@datasith) - Applied AI architect and robotics/perception researcher building generative, agentic, and physical AI systems." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css?v=20261108b" />
 </head>
+<body>
+  <canvas id="webgl-bg" class="webgl-bg" aria-hidden="true"></canvas>
+  <div class="app-shell">
+    <div class="gc-top-line"></div>
 
-<body class="no-scroll-preload">
-    <!-- loader -->
-    <div class="loader-container">
-        <div class="atom">
-            <div class="electron"></div>
-            <div class="electron-alpha"></div>
-            <div class="electron-omega"></div>
-        </div>
-    </div>
-
-    <!--Dynamic Nav Bar-->
-
-    <!--Particles effect-->
-    <div id="home">
-        <section class="center">
-            <div id="particles-js"></div>
-        </section>
-    </div>
-    <center>
-        <!-- Home Section -->
-        <div class="text col-sm-6" style="margin-top: 140px;"><span class="wave"><img src="assets/images/Hand.gif" width="35px"></span> I'm <span class="header">Cisco <> @datasith</span>
-            <div class="center">
-                <div>
-                    <img src="assets/images/pfp.jpg" alt="" class="rounded-circle" height="200" width="200">
-                </div>
-                <br/>
-                <span style="display: inline;">I am into <span class="animated-text"
-                    data-words="Autonomous Vehicles, Computer Vision, Machine (Deep) Learning, Robotics, Open Source"></span>
-                </span>
-                <div>
-                    <div class="social-icons">
-
-                        <a class="socialicon twitter" href="https://twitter.com/datasith" target="_blank" rel="author">
-                            <!-- SVG code for twitter icon -->
-                            <svg class="twitter-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-                                <!-- bird body -->
-                                <path id="body" fill="#5DA8DC" d="M142.9,364.1c-1.6,1-3,1.7-4,2.3c-3,1.5-7.9,3.8-14.9,6.9c-7,3.1-14.7,5.7-23.1,7.9
-                                                c-8.4,2.2-15.6,3.8-21.8,4.7c-6.2,0.9-12.2,1.5-18.1,1.8s-11.4,0.3-16.7,0c-5.2-0.3-8.5-0.5-9.6-0.6l-1.8-0.2l-0.4-0.1l-0.4-0.1v0.8
-                                                h0.2l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1H33l0.4,0.2l0.4,0.2l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l3.6,2.2c2.4,1.5,4.5,2.6,6.4,3.6
-                                                s6.6,3.3,14.1,7.1c7.6,3.7,16.6,7.4,27.2,11.1s18.6,6.2,24,7.4c5.4,1.3,12.8,2.6,22.2,3.9s14.9,2.1,16.3,2.2
-                                                c1.5,0.1,3.3,0.3,5.5,0.4l3.3,0.2v0.2h25.6v-0.2l14-1.3c9.3-0.9,17.6-2.1,25-3.3c7.3-1.3,14.9-3.1,22.8-5.5
-                                                c7.9-2.4,15.3-4.9,22.4-7.7c7.1-2.8,13.7-5.7,19.7-9c6.1-3.2,11.3-6,15.6-8.5c4.3-2.5,9.1-5.6,14.2-9.3c5.2-3.7,10-7.5,14.6-11.2
-                                                s7.1-5.9,7.7-6.4c0.6-0.6,4-4,10.2-10.2c6.2-6.3,11.3-11.9,15.4-16.8c4-5,8-10.3,12-15.9c3.9-5.6,8.3-12.5,13-20.6
-                                                s9.2-17.3,13.5-27.5s8-20.7,11-31.5c3-10.7,5.2-20.4,6.7-28.9s2.4-16.5,3-23.8c0.5-7.3,0.8-13.9,0.9-19.7s2.5-10.8,7.4-14.8
-                                                s9.9-8.5,15-13.7c5.1-5.1,7.9-8,8.3-8.7c0.5-0.7,0.9-1.1,1.1-1.2c0.3-0.1,2.1-2.3,5.3-6.7c3.3-4.4,5-6.6,5-6.7l0.1-0.1l0.2-0.4
-                                                l0.2-0.4l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.2-0.1l0.2-0.1V115l-1,0.3l-0.8,0.1
-                                                l-0.4,0.2l-0.4,0.2l-0.4,0.2l-0.4,0.2l-0.6,0.2l-1.2,0.4l-10.6,3.6c-6.7,2.2-13.7,4.1-21,5.7l-11,2.4h-1.9l0.1-0.1l0.1-0.1l0.1-0.1
-                                                l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.4-0.2l0.4-0.2l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.4-0.2l0.4-0.2l1.9-1.3
-                                                c1.3-0.9,2.4-1.8,3.3-2.8s2.8-2.7,5.6-5.1c2.8-2.4,6-6,9.5-10.7s6.5-9.4,8.8-14s3.6-7.2,3.7-7.9c0.1-0.6,0.3-1.2,0.4-1.6l0.2-0.6
-                                                l0.2-0.4l0.2-0.4l0.2-0.6l0.2-0.6l0.1-0.6l0.1-0.6l-0.4,0.1l-0.4,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.4,0.2l-0.4,0.2
-                                                l-0.4,0.2l-0.4,0.2l-0.1,0.1c-0.1,0.1-0.8,0.4-1.9,1.2c-1.2,0.7-4.7,2.4-10.5,5s-11.6,5-17.5,7.1s-11.4,3.7-16.5,4.9
-                                                s-8.8,0.5-11.3-1.9c-2.4-2.4-5.2-4.7-8.3-6.9c-3.1-2.2-6.5-4.3-10.4-6.4c-3.8-2.1-7.7-3.9-11.8-5.5c-4-1.6-8.6-2.9-13.5-3.8
-                                                l-7.4-1.5h-20.5v0.1c0,0.1-1.7,0.4-5.1,0.9s-7.6,1.6-12.6,3.3c-5,1.7-10.4,4.2-16.3,7.4c-5.9,3.3-11.1,7-15.7,11.2
-                                                s-8.3,8.3-11.2,12.2c-2.9,3.9-5.2,7.4-7,10.5C221.5,163.3,231.3,307,142.9,364.1z" />
-
-                                <!-- wing1 -->
-                                <path id="wing1" fill="#5DA8DC" d="M233.2,181.5c-5-0.5-12.4-1.7-22.2-3.6c-9.8-1.8-16.8-3.3-20.8-4.5s-11.1-3.7-21.2-7.4
-                                                c-10.1-3.8-19.5-8-28.3-12.8c-8.8-4.7-16.8-9.5-24-14.4s-13.1-9.1-17.5-12.8c-4.5-3.7-7.1-6-7.9-7s-1.5-1.6-1.9-1.8
-                                                c-0.5-0.2-3.2-2.7-8-7.6s-9.1-9.2-12.6-13.2l-5.3-5.9l-0.1-0.1l-0.1-0.1L63.1,90l-0.2-0.4l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
-                                                l-0.1-0.1L62.3,89l-0.1-0.1l0,0.1l-0.1,0.1L62,89.2l0,0.1l-0.1,0.1L61.7,90l-0.2,0.6L57.9,98c-2.2,5-3.9,9.7-5.1,14.1
-                                                c-1.2,4.5-1.9,8.5-2.4,12c-0.4,3.5-0.5,7.8-0.4,12.8s0.7,10,1.8,15.1c1,5.1,2.6,10.2,4.6,15.2c2.1,5.1,4,9.2,5.8,12.5
-                                                c1.8,3.2,3.9,6.4,6.3,9.2c2.4,2.9,4.7,5.6,7.1,8.3s4.6,4.7,6.7,6.4c2.2,1.6,3.3,2.5,3.4,2.5l0.1,0.1l0.4,0.2l0.4,0.2l0.1,0.1
-                                                l0.1,0.1l0.1,0.1L87,207l0.4,0.2l0.4,0.2l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1H85l-1.8-0.2
-                                                c-1.2-0.1-4.8-0.9-10.8-2.2s-11.1-2.9-15.1-4.7l-6.1-2.8l-0.4-0.2l-0.4-0.2l-0.4-0.2l-0.4-0.2l-0.4-0.1l-0.4-0.1l0.7,8.3
-                                                c0.4,5.5,1.4,11,2.8,16.3c1.5,5.4,3.6,11,6.5,16.9s6.2,11.1,9.8,15.5c3.7,4.5,7,8.1,10.1,11c3.1,2.8,6.3,5.4,9.8,7.8
-                                                c3.4,2.4,8,4.8,13.8,7.3s9.3,3.9,10.6,4.3c1.3,0.4,2.2,0.6,2.8,0.8l0.8,0.2l0.8,0.2l0.8,0.2l0.8,0.2l0.8,0.2l-0.1,0.1l-0.1,0.1
-                                                l-0.1,0.1l-0.1,0.1l-1,0.2l-1,0.2l-0.8,0.2c-0.5,0.1-1.9,0.4-4.3,0.8s-6.6,0.6-12.8,0.8c-6.2,0.1-10.7,0-13.5-0.4l-4.3-0.6L81,288
-                                                l-0.6-0.1l0.1,0.4l0.1,0.4l0.2,0.6l0.2,0.6l3.2,7.2c2.2,4.8,4.4,9,6.7,12.7c2.3,3.7,5.1,7.2,8.3,10.7c3.2,3.5,5.8,6.2,7.9,8
-                                                c2.1,1.9,5.3,4.3,9.9,7.2c4.6,2.9,9.3,5.4,14.1,7.4c4.9,2.1,9.4,3.7,13.5,4.7c4.2,1,7.3,1.6,9.2,1.8c1.9,0.1,4,0.3,6.1,0.4l3.1,0.2
-                                                c117.9-117.9,82.9-167.7,82.9-167.7l-2.8-0.1C241.6,182.3,238.2,181.9,233.2,181.5z" />
-                                <!-- wing2 -->
-                                <path id="wing2" fill="#5DA8DC" d="M233.2,181.5c-5-0.5-12.4-1.7-22.2-3.6c-9.8-1.8-16.8-3.3-20.8-4.5s-11.1-3.7-21.2-7.4
-                                                c-10.1-3.8-19.5-8-28.3-12.8c-8.8-4.7-16.8-9.5-24-14.4s-13.1-9.1-17.5-12.8c-4.5-3.7-7.1-6-7.9-7s-1.5-1.6-1.9-1.8
-                                                c-0.5-0.2-3.2-2.7-8-7.6s-9.1-9.2-12.6-13.2l-5.3-5.9l-0.1-0.1l-0.1-0.1L63.1,90l-0.2-0.4l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
-                                                l-0.1-0.1L62.3,89l-0.1-0.1l0,0.1l-0.1,0.1L62,89.2l0,0.1l-0.1,0.1L61.7,90l-0.2,0.6L57.9,98c-2.2,5-3.9,9.7-5.1,14.1
-                                                c-1.2,4.5-1.9,8.5-2.4,12c-0.4,3.5-0.5,7.8-0.4,12.8s0.7,10,1.8,15.1c1,5.1,2.6,10.2,4.6,15.2c2.1,5.1,4,9.2,5.8,12.5
-                                                c1.8,3.2,3.9,6.4,6.3,9.2c2.4,2.9,4.7,5.6,7.1,8.3s4.6,4.7,6.7,6.4c2.2,1.6,3.3,2.5,3.4,2.5l0.1,0.1l0.4,0.2l0.4,0.2l0.1,0.1
-                                                l0.1,0.1l0.1,0.1L87,207l0.4,0.2l0.4,0.2l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1H85l-1.8-0.2
-                                                c-1.2-0.1-4.8-0.9-10.8-2.2s-11.1-2.9-15.1-4.7l-6.1-2.8l-0.4-0.2l-0.4-0.2l-0.4-0.2l-0.4-0.2l-0.4-0.1l-0.4-0.1l0.7,8.3
-                                                c0.4,5.5,1.4,11,2.8,16.3c1.5,5.4,3.6,11,6.5,16.9s6.2,11.1,9.8,15.5c3.7,4.5,7,8.1,10.1,11c3.1,2.8,6.3,5.4,9.8,7.8
-                                                c3.4,2.4,8,4.8,13.8,7.3s9.3,3.9,10.6,4.3c1.3,0.4,2.2,0.6,2.8,0.8l0.8,0.2l0.8,0.2l0.8,0.2l0.8,0.2l0.8,0.2l-0.1,0.1l-0.1,0.1
-                                                l-0.1,0.1l-0.1,0.1l-1,0.2l-1,0.2l-0.8,0.2c-0.5,0.1-1.9,0.4-4.3,0.8s-6.6,0.6-12.8,0.8c-6.2,0.1-10.7,0-13.5-0.4l-4.3-0.6L81,288
-                                                l-0.6-0.1l0.1,0.4l0.1,0.4l0.2,0.6l0.2,0.6l3.2,7.2c2.2,4.8,4.4,9,6.7,12.7c2.3,3.7,5.1,7.2,8.3,10.7c3.2,3.5,5.8,6.2,7.9,8
-                                                c2.1,1.9,5.3,4.3,9.9,7.2c4.6,2.9,9.3,5.4,14.1,7.4c4.9,2.1,9.4,3.7,13.5,4.7c4.2,1,7.3,1.6,9.2,1.8c1.9,0.1,4,0.3,6.1,0.4l3.1,0.2
-                                                c117.9-117.9,82.9-167.7,82.9-167.7l-2.8-0.1C241.6,182.3,238.2,181.9,233.2,181.5z" />
-                            </svg>
-                        </a>
-
-                        <a class="socialicon linkedin" href="https://linkedin.com/in/datasith" target="_blank" rel="author">
-                            <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                        </a>
-
-                        <a class="socialicon leetcode" href="https://leetcode.com/datasith" target="_blank" rel="author">
-                            <svg class="leetcode-icon" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-8 -8 40 40" fill="#0e76a8"  stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather">
-                                <path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 
-                                                                5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 
-                                                                1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 
-                                                                1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 
-                                                                2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 
-                                                                1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 
-                                                                12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/>
-                            </svg>
-                        </a>
-
-                        <a class="socialicon kaggle" href="https://kaggle.com/thedatasith" target="_blank" rel="author">
-                            <i class="fab fa-kaggle"></i>
-                        </a>
-
-                        <a class="socialicon github" href="https://github.com/datasith" target="_blank" rel="author">
-                            <!-- SVG code for Github icon -->
-                            <svg class="github-icon" width="45px" height="45px" viewBox="0 0 300 300">
-                                <!-- body -->
-                                <path id="body" d="M112.5,234.4v43.1c24.5,7.5,50.5,7.5,75,0V225c-0.4-11.1-4.9-21.6-12.7-29.6c30-3.4,59.5-23.5,59.5-64.1
-                                                            c0.9-13.9-3.3-27.7-11.8-38.7c4.1-11.6,3.7-24.4-1.3-35.7c0,0-11.2-3.7-37.5,13.8c-22.1-6.1-45.3-6.1-67.4,0
-                                                            C90.6,53.3,78.9,56.8,78.9,56.8c-5,11.3-5.4,24.1-1.3,35.7c-8.5,11.1-12.7,24.8-11.9,38.7c0.2,33.8,26.4,61.8,60.2,64.1
-                                                            c-5,4.7-8.1,11.1-8.6,18" />
-                                <!-- arm                             -->
-                                <path id="arm" d="M125.2,213.4c-13.9,7.8-31.5,2.8-39.3-11.2c-4.3-7.7-12-12.8-20.7-13.8c-11.2,0-4.6,6.4,0,9.4
-                                                            c6,5.1,10.8,11.5,13.8,18.8c2.9,7.4,7.7,24.1,41.5,17.8" />
-                            </svg>
-                        </a>
-
-                        <a class="socialicon youtube" href="https://youtube.com/datasith" target="_blank" rel="author">
-                            <i class="fab fa-youtube"></i>
-                        </a>                        
-                    </div>
-                </div>
+    <!-- ====================================================================
+         STICKY HEADER (4 Top-Navigation Tabs: Home, Projects, Publications, Bio)
+         ==================================================================== -->
+    <header class="top-header">
+      <div class="header-inner">
+        <div class="brand-left">
+          <a class="brand-group" href="#overview" onclick="switchView('overview'); return false;">
+            <div class="brand-badge-icon">
+              <img src="favicon.svg" alt="@datasith" />
             </div>
+            <div class="brand-identity">
+              <span class="brand-name">cisco zabala</span>
+              <span class="brand-email">@datasith</span>
+            </div>
+          </a>
+          <a class="pill-role" href="https://github.com/datasith" target="_blank" rel="noopener" title="GitHub (@datasith)">
+            <span class="dot-pulse"></span>
+            <span>Applied AI · Google</span>
+          </a>
+          <span class="pill-location">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>California, USA</span>
+          </span>
         </div>
-    </center>
 
-    <br><br><br>
-    <!-- Dynamic footer section -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <nav class="nav-tabs" aria-label="Main Navigation">
+          <button type="button" class="nav-tab nav-tab-btn active" data-view="overview" onclick="switchView('overview')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            <span>Home</span>
+          </button>
+          <button type="button" class="nav-tab nav-tab-btn" data-view="projects" onclick="switchView('projects')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>Projects</span>
+          </button>
+          <button type="button" class="nav-tab nav-tab-btn" data-view="publications" onclick="switchView('publications')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+            <span>Publications</span>
+          </button>
+          <button type="button" class="nav-tab nav-tab-btn" data-view="bio" onclick="switchView('bio')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Bio</span>
+          </button>
+        </nav>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6D61F5TL4"></script>
-    <!-- Fetching our Google Tag Manager -->
+        <div class="header-actions">
+          <button type="button" class="cmdk-trigger" onclick="openCommandPalette()" title="Command Palette (Cmd+K or /)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <span>Search</span>
+            <span class="kbd-chip">Cmd+K</span>
+          </button>
+          <button type="button" class="golink-pill" onclick="copyShortlink()" title="Copy https://datasith.com">
+            <span class="dot-live"></span>
+            <span>datasith.com</span>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="0" ry="0"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+          </button>
+          <button type="button" class="theme-btn" onclick="toggleTheme()" aria-label="Toggle Light/Dark Theme" title="Switch Dark / Light Theme">
+            <svg id="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            <svg id="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="assets/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
-    <script src="assets/js/particle.js"></script>
+    <main class="main-container">
 
+      <!-- ==================================================================
+           VIEW 1: HOME (OVERVIEW)
+           ================================================================== -->
+      <div id="view-overview" class="view-section space-y-12">
+        <section class="open-hero">
+          <div class="hero-coord-row">
+            <span class="hero-eyebrow">SYS.00 // APPLIED AI · GENERATIVE, AGENTIC &amp; PHYSICAL SYSTEMS</span>
+            <span class="hero-coords">CALIFORNIA, USA · @DATASITH</span>
+          </div>
+          <h1 class="hero-monumental">cisco zabala <span class="hero-handle"><span class="hero-handle-at">@</span>datasith</span></h1>
+          <p class="hero-lead">
+            Applied AI architect, former robotics engineer, and perception researcher building <strong>generative, agentic, and physical AI</strong> systems from whiteboard to production. Focused on how agents use tools, reason over governed data, and work alongside people on hard real-world problems.
+          </p>
+
+          <div class="btn-group" style="margin-top:24px;">
+            <a class="btn-primary-spec" href="https://github.com/datasith" target="_blank" rel="noopener">
+              <span>GITHUB (@DATASITH)</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+            <a class="btn-ghost-spec" href="https://www.linkedin.com/in/datasith" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn-ghost-spec" href="https://scholar.google.com/citations?user=mXM-mKoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="btn-ghost-spec" href="https://www.youtube.com/@datasith" target="_blank" rel="noopener">YouTube</a>
+          </div>
+
+          <div class="seam-matrix-4 arch-frame">
+            <button type="button" class="seam-cell" data-spotlight onclick="switchView('projects')">
+              <div class="seam-cell-top">
+                <span class="seam-idx">01 // AGENT ARCHITECTURES</span>
+                <span class="seam-arrow">-&gt;</span>
+              </div>
+              <div>
+                <div class="seam-val">A2A · ADK · Eval</div>
+                <div class="seam-sub">Open-Source Reference Blueprints</div>
+              </div>
+            </button>
+            <button type="button" class="seam-cell" data-spotlight onclick="switchView('projects')">
+              <div class="seam-cell-top">
+                <span class="seam-idx">02 // OPEN-SOURCE &amp; HARDWARE</span>
+                <span class="seam-arrow">-&gt;</span>
+              </div>
+              <div>
+                <div class="seam-val">500+ Stars</div>
+                <div class="seam-sub">52 Public GitHub Repositories</div>
+              </div>
+            </button>
+            <button type="button" class="seam-cell" data-spotlight onclick="switchView('publications')">
+              <div class="seam-cell-top">
+                <span class="seam-idx">03 // RESEARCH LEDGER</span>
+                <span class="seam-arrow">-&gt;</span>
+              </div>
+              <div>
+                <div class="seam-val">05 Works</div>
+                <div class="seam-sub">Journal Papers &amp; Open Studies</div>
+              </div>
+            </button>
+            <button type="button" class="seam-cell" data-spotlight onclick="switchView('bio')">
+              <div class="seam-cell-top">
+                <span class="seam-idx">04 // VERIFIED CREDENTIALS</span>
+                <span class="seam-arrow">-&gt;</span>
+              </div>
+              <div>
+                <div class="seam-val">22 Active</div>
+                <div class="seam-sub">GCP · AWS · NVIDIA · Security+</div>
+              </div>
+            </button>
+          </div>
+        </section>
+
+        <!-- Featured Split 01: Open-Source Agentic AI Reference Architectures -->
+        <section class="editorial-feature arch-frame" data-spotlight>
+          <div class="editorial-feature-copy">
+            <div>
+              <div class="spec-kicker-row">
+                <span class="spec-kicker">ARCH_01 // OPEN-SOURCE REFERENCE BLUEPRINTS</span>
+                <span class="spec-tag-mono spec-tag-signal">APACHE 2.0 · TERRAFORM + ADK</span>
+              </div>
+              <h2 class="feature-headline">GCP Agentic AI Samples: Cross-Platform A2A Interop &amp; Continuous Evaluation Flywheel</h2>
+              <p class="feature-body">
+                Production-grade, runnable multi-agent architectures provisioned end-to-end with Terraform. <strong>Sample 01</strong> wires bidirectional 3P SaaS-to-Cloud Agent Runtime interoperability over <strong>A2A (HTTP+JSON)</strong>, OIDC Workload Identity Federation, Agent Registry, and dual-mode Agent Gateway. <strong>Sample 02</strong> implements a continuous <strong>ADK evaluation flywheel</strong> spanning local trajectory checks, Metric Registry custom evaluators, synthetic user simulation, loss-cluster root-cause analysis, and OpenTelemetry GenAI v1.39+ ship gates.
+              </p>
+              <div class="feature-mini-specs">
+                <div>
+                  <div class="mini-spec-lbl">INTEROP PROTOCOL</div>
+                  <div class="mini-spec-val">A2A · OIDC WIF · MCP</div>
+                </div>
+                <div>
+                  <div class="mini-spec-lbl">QUALITY GATE</div>
+                  <div class="mini-spec-val">ADK Eval · OTel v1.39+</div>
+                </div>
+                <div>
+                  <div class="mini-spec-lbl">PROVISIONING</div>
+                  <div class="mini-spec-val">Modular Terraform</div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group">
+              <a class="btn-primary-spec" href="https://github.com/datasith/gcp-agentic-ai-samples" target="_blank" rel="noopener">
+                <span>OPEN REPOSITORY</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <button type="button" class="btn-ghost-spec" onclick="switchView('projects')">Explore All 08 Projects</button>
+            </div>
+          </div>
+
+          <div class="editorial-feature-media" onclick="openLightbox('assets/thumbs/ext_a2a_gateway.jpg', 'Cross-Platform A2A Interoperability &amp; Dual-Mode Agent Gateway Schematic')" style="cursor:pointer;background:#08090d;display:flex;align-items:center;justify-content:center;min-height:360px;position:relative;overflow:hidden;">
+            <img src="assets/thumbs/ext_a2a_gateway.jpg" alt="A2A Interoperability Schematic" style="width:100%;height:100%;max-height:420px;object-fit:contain;" />
+            <div class="hud-stamp-tl">BLUEPRINT // A2A + WIF GATEWAY</div>
+            <div class="hud-stamp-tr">GEMINI-3.8-FLASH · ADK</div>
+          </div>
+        </section>
+
+        <!-- Featured Split 02: Closed-Loop Physical AI & High-Speed Vision Research -->
+        <section class="editorial-feature arch-frame" data-spotlight>
+          <div class="editorial-feature-copy">
+            <div>
+              <div class="spec-kicker-row">
+                <span class="spec-kicker">RESEARCH_02 // CLOSED-LOOP PERCEPTION &amp; KINEMATICS</span>
+                <span class="spec-tag-mono">CURRENT BIOLOGY · IEEE TBME · JEB</span>
+              </div>
+              <h2 class="feature-headline">Animal-Robot Visual Interaction &amp; 3D High-Speed Kinematic Tracking</h2>
+              <p class="feature-body">
+                Before foundation models and cloud agents, built real-time closed-loop perception and robotic instrumentation for studying biological sensorimotor control: a vision-guided magnetic XY arena (<strong>Flyatar</strong>) interacting with walking <em>Drosophila</em> in real time, and a self-triggered multi-camera high-speed motion-capture rig (<strong>Flytrax</strong>) reconstructing 3D wing and body flight maneuvers.
+              </p>
+              <div class="feature-mini-specs">
+                <div>
+                  <div class="mini-spec-lbl">CONTROL LOOP</div>
+                  <div class="mini-spec-val">Real-Time XY Vision</div>
+                </div>
+                <div>
+                  <div class="mini-spec-lbl">CAPTURE RIG</div>
+                  <div class="mini-spec-val">3D High-Speed Video</div>
+                </div>
+                <div>
+                  <div class="mini-spec-lbl">PUBLICATIONS</div>
+                  <div class="mini-spec-val">03 Journal Papers</div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn-primary-spec" onclick="switchView('publications')">
+                <span>OPEN PUBLICATIONS</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+              <a class="btn-ghost-spec" href="https://doi.org/10.1016/j.cub.2012.05.024" target="_blank" rel="noopener">Current Biology (2012)</a>
+            </div>
+          </div>
+
+          <div class="editorial-feature-media" onclick="openLightbox('assets/rigs/rig_flyatar.jpg', 'Flyatar: Real-time vision-controlled XY robotic interaction rig')" style="cursor:pointer;position:relative;overflow:hidden;min-height:360px;">
+            <img src="assets/rigs/rig_flyatar.jpg" alt="Flyatar Robot-Fly Visual Interaction Rig" style="width:100%;height:100%;object-fit:cover;filter:var(--film-filter);" />
+            <div class="hud-stamp-tl">RIG_01 // FLYATAR XY VISION STAGE</div>
+            <div class="hud-stamp-tr">CLOSED-LOOP CONTROL</div>
+          </div>
+        </section>
+
+        <!-- Core Technical Stack Ledger -->
+        <section>
+          <div class="section-header-row">
+            <div>
+              <div class="hero-eyebrow" style="margin-bottom:6px;">CAPABILITIES // FULL-STACK APPLIED AI</div>
+              <h2 class="section-h2">Technical Architecture Domains</h2>
+              <p class="section-sub">Spanning cloud-scale multi-agent systems, self-supervised vision foundation models, and embedded edge hardware.</p>
+            </div>
+          </div>
+          <div class="spec-ledger arch-frame">
+            <div class="spec-row" data-spotlight>
+              <div class="spec-idx">STACK_01</div>
+              <div class="spec-topic">Agentic & Generative AI</div>
+              <div class="spec-detail">Multi-agent orchestration (ADK, A2A, MCP), governed RAG, trajectory evaluation flywheels, synthetic user simulation, vLLM, and runtime guardrails.</div>
+              <div class="spec-action"><span class="tag-chip">ADK · A2A · MCP</span></div>
+            </div>
+            <div class="spec-row" data-spotlight>
+              <div class="spec-idx">STACK_02</div>
+              <div class="spec-topic">Vision & Foundation Models</div>
+              <div class="spec-detail">PyTorch, self-supervised pre-training (MAE, DINO), Vision Transformers, multi-GPU distributed training, TensorRT, ONNX, and TFLite edge quantization.</div>
+              <div class="spec-action"><span class="tag-chip">PyTorch · ViT</span></div>
+            </div>
+            <div class="spec-row" data-spotlight>
+              <div class="spec-idx">STACK_03</div>
+              <div class="spec-topic">Cloud & MLOps Infrastructure</div>
+              <div class="spec-detail">Multi-cloud AI architectures across Google Cloud and AWS, Terraform IaC, Docker, Kubernetes, OpenTelemetry GenAI observability, and CI/CD ship gates.</div>
+              <div class="spec-action"><span class="tag-chip">GCP · AWS · IaC</span></div>
+            </div>
+            <div class="spec-row" data-spotlight>
+              <div class="spec-idx">STACK_04</div>
+              <div class="spec-topic">Physical AI, Edge & Robotics</div>
+              <div class="spec-detail">Vision-language-action (VLA) pipelines, ROS/ROS2, high-speed multi-camera capture rigs, embedded C/C++ firmware, custom PCB instrumentation, and IoT.</div>
+              <div class="spec-action"><span class="tag-chip">ROS2 · Edge VLA</span></div>
+            </div>
+            <div class="spec-row" data-spotlight>
+              <div class="spec-idx">STACK_05</div>
+              <div class="spec-topic">Languages & Data Systems</div>
+              <div class="spec-detail">Python, C/C++, SQL, TypeScript/JavaScript, vector databases, streaming telemetry pipelines, and deterministic statistical evaluation.</div>
+              <div class="spec-action"><span class="tag-chip">Python · C++ · SQL</span></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ==================================================================
+           VIEW 2: PROJECTS TAB
+           ================================================================== -->
+      <div id="view-projects" class="view-section space-y-12" style="display: none;">
+        <header class="open-subpage-header">
+          <div class="hero-eyebrow">PORTFOLIO // OPEN-SOURCE &amp; PRODUCTION SYSTEMS</div>
+          <h1 class="page-title">Projects &amp; Architectures</h1>
+          <p class="page-desc">
+            Selected open-source reference blueprints, multi-agent systems, foundation-model pipelines, mobile edge computer vision fleets, and robotics/hardware instrumentation.
+          </p>
+        </header>
+
+        <div class="filter-bar">
+          <div class="filter-pills" role="tablist" aria-label="Filter projects by domain">
+            <button type="button" class="filter-pill active" onclick="filterProjects('All', this)">All [08]</button>
+            <button type="button" class="filter-pill" onclick="filterProjects('Agentic & GenAI', this)">Agentic &amp; GenAI [03]</button>
+            <button type="button" class="filter-pill" onclick="filterProjects('Vision & Foundation ML', this)">Vision &amp; Foundation ML [02]</button>
+            <button type="button" class="filter-pill" onclick="filterProjects('Robotics & Embedded', this)">Robotics &amp; Embedded [03]</button>
+          </div>
+          <div class="search-input-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" class="search-input" placeholder="Filter by stack, protocol, or topic..." oninput="searchProjectsLedger(this.value)" />
+          </div>
+        </div>
+
+        <div id="projects-grid-container" class="card-grid-2"></div>
+      </div>
+
+      <!-- ==================================================================
+           VIEW 3: PUBLICATIONS TAB
+           ================================================================== -->
+      <div id="view-publications" class="view-section space-y-12" style="display: none;">
+        <header class="open-subpage-header">
+          <div class="hero-eyebrow">RESEARCH // PEER-REVIEWED &amp; PRE-REGISTERED WORK</div>
+          <h1 class="page-title">Publications &amp; Research</h1>
+          <p class="page-desc">
+            Peer-reviewed journal articles in closed-loop animal-robot perception, high-speed 3D kinematic tracking, and flight control, alongside open computational studies and technical writing.
+          </p>
+          <div class="btn-group" style="margin-top:20px;">
+            <a class="btn-primary-spec" href="https://scholar.google.com/citations?user=mXM-mKoAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+              <span>GOOGLE SCHOLAR PROFILE</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+            <a class="btn-ghost-spec" href="https://github.com/datasith/world-cup-2026-research" target="_blank" rel="noopener">World Cup 2026 Study Repo</a>
+          </div>
+        </header>
+
+        <section>
+          <div class="section-header-row">
+            <div>
+              <div class="hero-eyebrow" style="margin-bottom:6px;">RESEARCH</div>
+              <h2 class="section-h2">Selected Peer-Reviewed Publications</h2>
+              <p class="section-sub">Closed-loop animal-robot perception, high-speed 3D kinematic tracking, and autonomous control.</p>
+            </div>
+            <a class="ext-link" href="https://scholar.google.com/citations?user=mXM-mKoAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+              <span>GOOGLE SCHOLAR PROFILE</span>
+              <span>-&gt;</span>
+            </a>
+          </div>
+          <div class="spec-ledger spec-ledger-pub arch-frame">
+            <div class="spec-row spec-row-pub" data-spotlight>
+              <div class="spec-idx">2012</div>
+              <div class="pub-title-block">
+                <div class="spec-topic" style="margin-bottom:5px;">A simple strategy for detecting moving objects during locomotion revealed by animal-robot interactions</div>
+                <div style="font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.45;color:var(--text-muted);">F. Zabala, P. Polidoro, A. Robie, K. Branson, P. Perona & M. H. Dickinson</div>
+              </div>
+              <div class="spec-detail" style="font-size:12.5px;">Current Biology · 22(14), 1344-1350</div>
+              <div class="spec-action">
+                <a class="ext-link" href="https://doi.org/10.1016/j.cub.2012.05.024" target="_blank" rel="noopener">
+                  <span>DOI: 10.1016/j.cub.2012.05.024</span>
+                  <span>-&gt;</span>
+                </a>
+              </div>
+            </div>
+            <div class="spec-row spec-row-pub" data-spotlight>
+              <div class="spec-idx">2009</div>
+              <div class="pub-title-block">
+                <div class="spec-topic" style="margin-bottom:5px;">Flight dynamics and control of evasive maneuvers: the fruit fly's takeoff</div>
+                <div style="font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.45;color:var(--text-muted);">F. Zabala, G. M. Card, E. I. Fontaine, M. H. Dickinson & R. M. Murray</div>
+              </div>
+              <div class="spec-detail" style="font-size:12.5px;">IEEE Transactions on Biomedical Engineering · 56(9), 2295-2298</div>
+              <div class="spec-action">
+                <a class="ext-link" href="https://doi.org/10.1109/TBME.2009.2027606" target="_blank" rel="noopener">
+                  <span>DOI: 10.1109/TBME.2009.2027606</span>
+                  <span>-&gt;</span>
+                </a>
+              </div>
+            </div>
+            <div class="spec-row spec-row-pub" data-spotlight>
+              <div class="spec-idx">2009</div>
+              <div class="pub-title-block">
+                <div class="spec-topic" style="margin-bottom:5px;">Wing and body motion during flight initiation in Drosophila revealed by automated visual tracking</div>
+                <div style="font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.45;color:var(--text-muted);">E. I. Fontaine, F. Zabala, M. H. Dickinson & J. W. Burdick</div>
+              </div>
+              <div class="spec-detail" style="font-size:12.5px;">Journal of Experimental Biology · 212(9), 1307-1323</div>
+              <div class="spec-action">
+                <a class="ext-link" href="https://doi.org/10.1242/jeb.025379" target="_blank" rel="noopener">
+                  <span>DOI: 10.1242/jeb.025379</span>
+                  <span>-&gt;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-header-row">
+            <div>
+              <div class="hero-eyebrow" style="margin-bottom:6px;">OPEN STUDIES &amp; TECHNICAL WRITING</div>
+              <h2 class="section-h2">Pre-Registered Computational Studies &amp; Essays</h2>
+              <p class="section-sub">Monte Carlo simulation studies and essays on computer vision and autonomous systems.</p>
+            </div>
+          </div>
+          <div class="spec-ledger spec-ledger-pub arch-frame">
+            <div class="spec-row spec-row-pub" data-spotlight>
+              <div class="spec-idx">2026</div>
+              <div class="pub-title-block">
+                <div class="spec-topic" style="margin-bottom:5px;">World Cup 2026: A natural experiment in tournament design (32-to-48 team predictability, luck & competitive stakes)</div>
+                <div style="font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.45;color:var(--text-muted);">F. Zabala · Calibrated Elo/ML Strength Model & Pre-Registered Monte Carlo Simulator</div>
+              </div>
+              <div class="spec-detail" style="font-size:12.5px;">Open Pre-Registered Research Repository</div>
+              <div class="spec-action">
+                <a class="ext-link" href="https://github.com/datasith/world-cup-2026-research" target="_blank" rel="noopener">
+                  <span>GitHub: world-cup-2026-research</span>
+                  <span>-&gt;</span>
+                </a>
+              </div>
+            </div>
+            <div class="spec-row spec-row-pub" data-spotlight>
+              <div class="spec-idx">2022</div>
+              <div class="pub-title-block">
+                <div class="spec-topic" style="margin-bottom:5px;">How to fall in love with computer vision</div>
+                <div style="font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.45;color:var(--text-muted);">F. Zabala · Autonomous ground-vehicle navigation & high-speed experimental perception</div>
+              </div>
+              <div class="spec-detail" style="font-size:12.5px;">Technical Essay · Medium</div>
+              <div class="spec-action">
+                <a class="ext-link" href="https://medium.com/@datasith/how-to-fall-in-love-with-computer-vision-4f899ff51ecd" target="_blank" rel="noopener">
+                  <span>Medium (@datasith)</span>
+                  <span>-&gt;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-header-row">
+            <div>
+              <div class="hero-eyebrow" style="margin-bottom:6px;">EXPERIMENTAL INSTRUMENTATION</div>
+              <h2 class="section-h2">Closed-Loop Perception &amp; Capture Apparatus</h2>
+              <p class="section-sub">Custom vision-guided robotic arenas and multi-camera high-speed motion-capture rigs built for experimental studies.</p>
+            </div>
+          </div>
+          <div class="card-grid-2">
+            <article class="fctoo-card arch-frame" data-spotlight style="padding:0;overflow:hidden;cursor:pointer;" onclick="openLightbox('assets/rigs/rig_flyatar.jpg', 'Flyatar: Real-time vision-controlled magnetic XY stage for studying walking Drosophila visual interactions')">
+              <div style="position:relative;height:280px;overflow:hidden;background:#08090d;">
+                <img src="assets/rigs/rig_flyatar.jpg" alt="Flyatar Robot-Fly Interactions Rig" style="width:100%;height:100%;object-fit:cover;filter:var(--film-filter);" />
+                <div class="hud-stamp-tl">APPARATUS_01 // FLYATAR</div>
+              </div>
+              <div style="padding:20px 24px;">
+                <h3 class="card-h3" style="font-size:17px;">Real-Time Vision-Controlled Magnetic XY Arena</h3>
+                <p class="card-note" style="margin-bottom:0;">Closed-loop camera tracking and motorized XY magnet stage moving an autonomous stimulus inside a chamber to measure visually mediated responses in walking fruit flies (<em>Current Biology</em>, 2012).</p>
+              </div>
+            </article>
+            <article class="fctoo-card arch-frame" data-spotlight style="padding:0;overflow:hidden;cursor:pointer;" onclick="openLightbox('assets/rigs/rig_flytrax.jpg', 'Flytrax: Self-triggered LED arena and 3D high-speed multi-camera motion capture rig')">
+              <div style="position:relative;height:280px;overflow:hidden;background:#08090d;">
+                <img src="assets/rigs/rig_flytrax.jpg" alt="Flytrax 3D High-Speed Capture Rig" style="width:100%;height:100%;object-fit:cover;filter:var(--film-filter);" />
+                <div class="hud-stamp-tl">APPARATUS_02 // FLYTRAX</div>
+              </div>
+              <div style="padding:20px 24px;">
+                <h3 class="card-h3" style="font-size:17px;">Self-Triggered 3D High-Speed Flight Kinematics Rig</h3>
+                <p class="card-note" style="margin-bottom:0;">Multi-camera high-speed videography rig surrounded by a self-triggered visual stimulus LED chamber for automated 3D wing and body tracking in free-flying insects (<em>J. Exp. Biol.</em>, 2009).</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- ==================================================================
+           VIEW 4: BIO TAB
+           ================================================================== -->
+      <div id="view-bio" class="view-section space-y-12" style="display: none;">
+        <header class="open-subpage-header">
+          <div class="hero-eyebrow">PROFILE // APPLIED AI · CALIFORNIA, USA</div>
+          <h1 class="page-title">cisco zabala</h1>
+          <p class="page-desc">
+            Applied AI architect, former robotics engineer, perception scientist, and open-hardware founder. Spent four years at AWS taking generative, agentic, geospatial, and edge-deployed AI from whiteboard to production across Defense, Intelligence, and Federal Civilian missions, following computer vision research at Walmart Store No. 8 and eight years building ACROBOTIC. Currently at <strong>Google</strong> working on Cloud AI and multi-agent systems. Outside of work: trail ultrarunning, snowboarding, boxing, and futbol.
+          </p>
+          <div class="btn-group" style="margin-top:20px;">
+            <a class="btn-primary-spec" href="https://github.com/datasith" target="_blank" rel="noopener">
+              <span>GITHUB (@DATASITH)</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+            <a class="btn-ghost-spec" href="https://www.linkedin.com/in/datasith" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn-ghost-spec" href="https://scholar.google.com/citations?user=mXM-mKoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="btn-ghost-spec" href="https://www.youtube.com/@datasith" target="_blank" rel="noopener">YouTube</a>
+          </div>
+        </header>
+
+        <!-- Engineering & Research Trajectory -->
+        <section>
+          <div class="section-header-row">
+            <div>
+              <div class="hero-eyebrow" style="margin-bottom:6px;">TRAJECTORY // 15+ YEARS APPLIED SYSTEMS</div>
+              <h2 class="section-h2">Engineering &amp; Research Trajectory</h2>
+              <p class="section-sub">Autonomous perception, embedded hardware/ML, and cloud-scale multi-agent architectures from lab instrumentation to mission production.</p>
+            </div>
+          </div>
+          <div class="spec-ledger arch-frame">
+            <div class="spec-row" data-spotlight>
+              <div class="spec-idx">2026 - Present</div>
+              <div class="spec-topic">Google · Cloud AI</div>
+              <div class="spec-detail"><strong>Practice Customer Engineer, Applied & Agentic AI</strong> · Architecting multi-agent systems, cross-platform A2A/MCP interoperability, continuous evaluation flywheels, and high-assurance AI guardrails from prototype to production.</div>
+              <div class="spec-action"><span class="tag-chip">01</span></div>
+            </div>
+            <div class="spec-row" data-spotlight>
+              <div class="spec-idx">2022 - 2026</div>
+              <div class="spec-topic">Amazon Web Services (AWS)</div>
+              <div class="spec-detail"><strong>Sr. Data Scientist -> Data Science Architect -> CV & IoT Lead</strong> · Scoped, de-risked, and delivered generative AI, multi-agent RAG, MAE/DINO geospatial foundation models, and edge-deployed VLA pipelines across U.S. Defense, Intelligence, and Federal Civilian programs.</div>
+              <div class="spec-action"><span class="tag-chip">02</span></div>
+            </div>
+            <div class="spec-row" data-spotlight>
+              <div class="spec-idx">2021 - 2022</div>
+              <div class="spec-topic">Walmart Global Tech (Store No. 8)</div>
+              <div class="spec-detail"><strong>Research Scientist, Computer Vision</strong> · Co-led nationwide rollout of mobile on-device computer vision at sub-100ms inference latency across inventory, asset protection, and analytics.</div>
+              <div class="spec-action"><span class="tag-chip">03</span></div>
+            </div>
+            <div class="spec-row" data-spotlight>
+              <div class="spec-idx">2013 - 2021</div>
+              <div class="spec-topic">ACROBOTIC · Pasadena, CA</div>
+              <div class="spec-detail"><strong>Founder & Chief Technology Officer</strong> · Founded and led an open-source robotics, embedded ML, and remote-sensing hardware/firmware company from PCB layout to cloud telemetry for makers through National Laboratory engineers.</div>
+              <div class="spec-action"><span class="tag-chip">04</span></div>
+            </div>
+            <div class="spec-row" data-spotlight>
+              <div class="spec-idx">2007 - 2013</div>
+              <div class="spec-topic">Autonomous Systems & Perception Research</div>
+              <div class="spec-detail"><strong>Control & Dynamical Systems · DARPA Urban Challenge</strong> · Built automated 3D high-speed multi-camera animal-robot perception pipelines and computer vision navigation systems for autonomous ground vehicles.</div>
+              <div class="spec-action"><span class="tag-chip">05</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Multi-Cloud Active Certifications -->
+        <section>
+          <div class="section-header-row">
+            <div>
+              <div class="hero-eyebrow" style="margin-bottom:6px;">CREDENTIALS // VERIFIED CREDLY WALLET · 22 ACTIVE</div>
+              <h2 class="section-h2">Active Cloud, AI &amp; Security Certifications</h2>
+              <p class="section-sub">Click any badge to verify live credential status on Credly.</p>
+            </div>
+            <a class="ext-link" href="https://www.credly.com/users/datasith" target="_blank" rel="noopener">
+              <span>CREDLY WALLET</span>
+              <span>-&gt;</span>
+            </a>
+          </div>
+
+          <div class="filter-bar" style="margin-bottom:16px;">
+            <div class="filter-pills" role="tablist" aria-label="Filter certifications by issuer">
+              <button type="button" class="filter-pill cert-pill active" onclick="filterCerts('All', this)">All [22]</button>
+              <button type="button" class="filter-pill cert-pill" onclick="filterCerts('Google Cloud', this)">Google Cloud [06]</button>
+              <button type="button" class="filter-pill cert-pill" onclick="filterCerts('AWS', this)">AWS [14]</button>
+              <button type="button" class="filter-pill cert-pill" onclick="filterCerts('NVIDIA & Security', this)">NVIDIA &amp; Security [02]</button>
+            </div>
+          </div>
+
+          <div id="certs-grid-container" class="cert-seam-grid arch-frame"></div>
+        </section>
+      </div>
+
+    </main>
+
+    <!-- ====================================================================
+         CMD+K KEYBOARD COMMAND PALETTE MODAL
+         ==================================================================== -->
+    <div id="cmdk-backdrop" class="cmdk-backdrop" onclick="closeCommandPalette()">
+      <div class="cmdk-modal arch-frame" onclick="event.stopPropagation()">
+        <div class="cmdk-input-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="cmdk-input" type="text" class="cmdk-input" placeholder="Jump to project, publication, certification, or action..." oninput="renderCommandItems(this.value)" autocomplete="off" />
+          <span class="kbd-chip">ESC</span>
+        </div>
+        <div id="cmdk-list" class="cmdk-list"></div>
+        <div class="cmdk-footer">
+          <span>Navigate: Up/Down · Open: Enter</span>
+          <span>Shortcut: Cmd+K or /</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         PHOTO & SCHEMATIC LIGHTBOX
+         ==================================================================== -->
+    <div id="photo-lightbox" class="lightbox-backdrop" onclick="closeLightbox()">
+      <div class="lightbox-box arch-frame" onclick="event.stopPropagation()">
+        <div class="lightbox-header">
+          <span id="lightbox-caption" style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text-secondary);"></span>
+          <button type="button" class="btn-ghost-spec" style="padding:4px 10px;" onclick="closeLightbox()">CLOSE [ESC]</button>
+        </div>
+        <div class="lightbox-body">
+          <img id="lightbox-img" src="" alt="Enlarged figure" />
+        </div>
+      </div>
+    </div>
+
+    <div id="toast-msg" class="toast-msg"></div>
+
+    <!-- ====================================================================
+         STICKY BOTTOM TELEMETRY BAR
+         ==================================================================== -->
+    <footer class="bottom-bar">
+      <div class="bottom-bar-inner">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+          <span style="font-weight:600;color:var(--text-primary);">cisco zabala · @datasith</span>
+          <span>//</span>
+          <span>Applied AI · Generative, Agentic &amp; Physical Systems</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+          <button type="button" id="webgl-status-btn" class="webgl-status-btn" onclick="toggleWebglBackground()" title="Toggle WebGL2 Vector Field + Streamline Particles (releases GPU backbuffer when off)">
+            <span id="webgl-status-dot" class="webgl-dot"></span>
+            <span id="webgl-status-text">WebGL2: STREAMLINES [ACTIVE]</span>
+          </button>
+          <span>//</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;"><span class="dot-live"></span>datasith.com</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script id="portfolio-bootstrap" type="application/json">{"projects": [{"id": "cross-platform-a2a-interop", "index": "01", "thumbnail": "assets/thumbs/ext_a2a_gateway.jpg", "title": "Cross-Platform 3P Agent & Cloud Runtime Interoperability (A2A + WIF)", "author": "cisco zabala (@datasith) \u00b7 Open-Source Reference Architecture (Apache 2.0)", "date": "2026", "category": "Agentic & GenAI", "badge": "Agentic & GenAI", "signalBadge": true, "note": "End-to-end bidirectional interoperability between external third-party SaaS agents and Google Cloud Agent Runtime (reasoningEngines), provisioned with Terraform, Google ADK (gemini-3.8-flash), A2A over HTTP+JSON, OIDC Workload Identity Federation, Agent Registry, Auth Manager, and dual-mode Agent Gateway.", "tags": ["Google ADK", "A2A Protocol", "Workload Identity Federation", "Agent Gateway", "Terraform"], "primaryAction": {"label": "Open Blueprint", "action": "external", "url": "https://github.com/datasith/gcp-agentic-ai-samples/tree/main/01-cross-platform-3p-a2a-interop"}, "secondaryLinks": [{"label": "Catalog Repo", "url": "https://github.com/datasith/gcp-agentic-ai-samples"}]}, {"id": "agent-evaluation-flywheel", "index": "02", "thumbnail": "assets/thumbs/ext_eval_flywheel.jpg", "title": "Agent Evaluation & Continuous Quality Flywheel (ADK + OTel GenAI)", "author": "cisco zabala (@datasith) \u00b7 Open-Source Reference Architecture (Apache 2.0)", "date": "2026", "category": "Agentic & GenAI", "badge": "Agentic & GenAI", "signalBadge": true, "note": "Production agent quality engineering pipeline wiring fast local trajectory checks (adk eval), versioned custom evaluators in Metric Registry, multi-run experiments (v1_baseline vs. v2_optimized), automatic loss-cluster root-cause analysis, synthetic user simulation, CI/CD ship gates, and OpenTelemetry GenAI v1.39+ telemetry.", "tags": ["Agent Evaluations", "OpenTelemetry GenAI", "Synthetic User Sim", "CI/CD Ship Gates", "Terraform"], "primaryAction": {"label": "Open Flywheel", "action": "external", "url": "https://github.com/datasith/gcp-agentic-ai-samples/tree/main/02-agent-platform-evaluation-flywheel"}, "secondaryLinks": [{"label": "Catalog Repo", "url": "https://github.com/datasith/gcp-agentic-ai-samples"}]}, {"id": "multi-agent-rag-high-assurance", "index": "03", "thumbnail": "assets/thumbs/ext_multiagent_rag.jpg", "title": "High-Assurance Multi-Agent RAG & Reasoning Evaluation Architecture", "author": "cisco zabala (@datasith) \u00b7 Production Applied AI Architecture", "date": "2025", "category": "Agentic & GenAI", "badge": "Agentic & GenAI", "signalBadge": true, "note": "Production multi-agent orchestration architecture pairing specialized reasoning sub-agents and governed vector retrieval over sensitive datasets with automated hallucination detection, retrieval fidelity scoring, and agent reasoning validation for FedRAMP and high-assurance environments.", "tags": ["Multi-Agent Orchestration", "Governed RAG", "Hallucination Detection", "High-Assurance AI", "Python"], "primaryAction": {"label": "GitHub Profile", "action": "external", "url": "https://github.com/datasith"}, "secondaryLinks": []}, {"id": "geospatial-mae-foundation-model", "index": "04", "thumbnail": "assets/thumbs/ext_geospatial_mae.jpg", "title": "Self-Supervised Geospatial Foundation Models (MAE & DINO ViT)", "author": "cisco zabala (@datasith) \u00b7 Distributed Computer Vision", "date": "2024", "category": "Vision & Foundation ML", "badge": "Vision & Foundation ML", "signalBadge": false, "note": "Multi-GPU distributed self-supervised pre-training pipeline using Masked Autoencoders (MAE) and DINO Vision Transformers on large-scale overhead satellite imagery corpora, cutting training cycles from weeks to days and sharply reducing labeled-data requirements on downstream object detection.", "tags": ["PyTorch", "Masked Autoencoders (MAE)", "Vision Transformers", "Distributed Training", "Remote Sensing"], "primaryAction": {"label": "ML Repositories", "action": "external", "url": "https://github.com/datasith?tab=repositories"}, "secondaryLinks": []}, {"id": "realtime-mobile-edge-cv", "index": "05", "thumbnail": "assets/thumbs/ext_mobile_cv.jpg", "title": "National-Scale Real-Time Mobile Edge Computer Vision (<100ms)", "author": "cisco zabala (@datasith) \u00b7 Edge Inference & Fleet MLOps", "date": "2022", "category": "Vision & Foundation ML", "badge": "Vision & Foundation ML", "signalBadge": false, "note": "Hybrid heuristic and deep-learning on-device perception pipeline deployed across nationwide mobile hardware fleets at sub-100ms inference latency, serving inventory, asset protection, and analytics with YOLOv5 + EfficientNetV2 ensembles, TensorRT, and TensorFlow Lite.", "tags": ["On-Device CV", "TensorRT & TFLite", "YOLOv5 + EfficientNetV2", "Sub-100ms Latency", "Fleet MLOps"], "primaryAction": {"label": "Open Ensemble Code", "action": "external", "url": "https://github.com/datasith/ds-experiments-yolov5-efficientnetv2"}, "secondaryLinks": []}, {"id": "autonomous-inspection-vla", "index": "06", "thumbnail": "assets/thumbs/ext_edge_vla.jpg", "title": "Autonomous Edge Inspection & Vision-Language-Action Pipeline", "author": "cisco zabala (@datasith) \u00b7 Physical AI & Robotics", "date": "2025", "category": "Robotics & Embedded", "badge": "Robotics & Embedded", "signalBadge": false, "note": "Closed-loop physical AI inspection system integrating ROS2 camera perception, edge-deployed language model task planning, and multimodal environmental reasoning over tactical/edge compute with real-time telemetry and low-bandwidth cloud model updates.", "tags": ["Physical AI & VLA", "ROS2", "Edge LLMs", "TensorRT & ONNX", "Cloud-Edge Sync"], "primaryAction": {"label": "Robotics Repos", "action": "external", "url": "https://github.com/datasith?tab=repositories"}, "secondaryLinks": []}, {"id": "closed-loop-vision-rigs", "index": "07", "thumbnail": "assets/thumbs/ext_fly_arena.jpg", "title": "Closed-Loop Animal-Robot Interaction & 3D High-Speed Flight Rigs", "author": "cisco zabala (@datasith) \u00b7 Closed-Loop Perception & Kinematics", "date": "2012", "category": "Robotics & Embedded", "badge": "Robotics & Embedded", "signalBadge": false, "note": "Real-time vision-controlled magnetic XY arena (Flyatar) driving robotic stimuli inside a walking Drosophila chamber, paired with a self-triggered LED arena and automated multi-camera 3D high-speed motion-capture rig (Flytrax) for free-flight wing and body kinematics.", "tags": ["Closed-Loop Vision", "3D High-Speed Tracking", "Real-Time Control", "Unsupervised Kinematics", "C++ & Python"], "primaryAction": {"label": "View Publications", "action": "view", "target": "publications"}, "secondaryLinks": [{"label": "Current Biology (2012)", "url": "https://doi.org/10.1016/j.cub.2012.05.024"}, {"label": "J. Exp. Biol. (2009)", "url": "https://doi.org/10.1242/jeb.025379"}]}, {"id": "acrobotic-open-hardware", "index": "08", "thumbnail": "assets/thumbs/ext_embedded_hw.jpg", "title": "ACROBOTIC Open-Source Embedded ML, IoT & PCB Ecosystem (500+ Stars)", "author": "cisco zabala (@datasith) \u00b7 Open-Source Hardware & Firmware", "date": "2021", "category": "Robotics & Embedded", "badge": "Robotics & Embedded", "signalBadge": false, "note": "Open-source electronics, custom Eagle PCB instrumentation, SSD1306 OLED C++ drivers (77 stars), ESP8266/ESP32 firmware and video tutorials (348 stars across 3 repositories), and Raspberry Pi sensor kits (83 stars) adopted from maker communities to National Laboratory engineers.", "tags": ["Embedded C/C++", "ESP32 & ESP8266", "Raspberry Pi", "PCB Design", "Open-Source Hardware"], "primaryAction": {"label": "ESP8266 Series (191*)", "action": "external", "url": "https://github.com/datasith/Ai_Tips_ESP8266"}, "secondaryLinks": [{"label": "RPi Demos (83*)", "url": "https://github.com/datasith/Ai_Demos_RPi"}, {"label": "SSD1306 Driver (77*)", "url": "https://github.com/datasith/Ai_Ardulib_SSD1306"}, {"label": "YouTube Series", "url": "https://www.youtube.com/playlist?list=PLNFq0T6Z3JPsHwzvPQncip-kMIdWpnnip"}]}], "publications": [{"year": "2012", "title": "A simple strategy for detecting moving objects during locomotion revealed by animal-robot interactions", "authors": "F. Zabala, P. Polidoro, A. Robie, K. Branson, P. Perona & M. H. Dickinson", "venue": "Current Biology \u00b7 22(14), 1344-1350", "label": "DOI: 10.1016/j.cub.2012.05.024", "url": "https://doi.org/10.1016/j.cub.2012.05.024"}, {"year": "2009", "title": "Flight dynamics and control of evasive maneuvers: the fruit fly's takeoff", "authors": "F. Zabala, G. M. Card, E. I. Fontaine, M. H. Dickinson & R. M. Murray", "venue": "IEEE Transactions on Biomedical Engineering \u00b7 56(9), 2295-2298", "label": "DOI: 10.1109/TBME.2009.2027606", "url": "https://doi.org/10.1109/TBME.2009.2027606"}, {"year": "2009", "title": "Wing and body motion during flight initiation in Drosophila revealed by automated visual tracking", "authors": "E. I. Fontaine, F. Zabala, M. H. Dickinson & J. W. Burdick", "venue": "Journal of Experimental Biology \u00b7 212(9), 1307-1323", "label": "DOI: 10.1242/jeb.025379", "url": "https://doi.org/10.1242/jeb.025379"}], "openStudies": [{"year": "2026", "title": "World Cup 2026: A natural experiment in tournament design (32-to-48 team predictability, luck & competitive stakes)", "authors": "F. Zabala \u00b7 Calibrated Elo/ML Strength Model & Pre-Registered Monte Carlo Simulator", "venue": "Open Pre-Registered Research Repository", "label": "GitHub: world-cup-2026-research", "url": "https://github.com/datasith/world-cup-2026-research"}, {"year": "2022", "title": "How to fall in love with computer vision", "authors": "F. Zabala \u00b7 Autonomous ground-vehicle navigation & high-speed experimental perception", "venue": "Technical Essay \u00b7 Medium", "label": "Medium (@datasith)", "url": "https://medium.com/@datasith/how-to-fall-in-love-with-computer-vision-4f899ff51ecd"}], "career": [{"period": "2026 - Present", "org": "Google \u00b7 Cloud AI", "role": "Practice Customer Engineer, Applied & Agentic AI", "summary": "Architecting multi-agent systems, cross-platform A2A/MCP interoperability, continuous evaluation flywheels, and high-assurance AI guardrails from prototype to production."}, {"period": "2022 - 2026", "org": "Amazon Web Services (AWS)", "role": "Sr. Data Scientist -> Data Science Architect -> CV & IoT Lead", "summary": "Scoped, de-risked, and delivered generative AI, multi-agent RAG, MAE/DINO geospatial foundation models, and edge-deployed VLA pipelines across U.S. Defense, Intelligence, and Federal Civilian programs."}, {"period": "2021 - 2022", "org": "Walmart Global Tech (Store No. 8)", "role": "Research Scientist, Computer Vision", "summary": "Co-led nationwide rollout of mobile on-device computer vision at sub-100ms inference latency across inventory, asset protection, and analytics."}, {"period": "2013 - 2021", "org": "ACROBOTIC \u00b7 Pasadena, CA", "role": "Founder & Chief Technology Officer", "summary": "Founded and led an open-source robotics, embedded ML, and remote-sensing hardware/firmware company from PCB layout to cloud telemetry for makers through National Laboratory engineers."}, {"period": "2007 - 2013", "org": "Autonomous Systems & Perception Research", "role": "Control & Dynamical Systems \u00b7 DARPA Urban Challenge", "summary": "Built automated 3D high-speed multi-camera animal-robot perception pipelines and computer vision navigation systems for autonomous ground vehicles."}], "certifications": [{"name": "Professional Cloud Architect", "vendor": "Google Cloud", "group": "Google Cloud", "expires": "2028-10-18", "url": "https://www.credly.com/badges/71354f47-7631-490a-a614-124ae1f20fdc", "image": "assets/certs/professional-cloud-architect.png"}, {"name": "Professional Machine Learning Engineer", "vendor": "Google Cloud", "group": "Google Cloud", "expires": "2028-10-18", "url": "https://www.credly.com/badges/1f0c698c-a79b-4c06-8db8-fd9c06cb016f", "image": "assets/certs/professional-machine-learning-engineer.png"}, {"name": "Associate Data Practitioner", "vendor": "Google Cloud", "group": "Google Cloud", "expires": "2029-11-07", "url": "https://www.credly.com/badges/9334778f-185d-4e97-b840-5d8488b238d1", "image": "assets/certs/associate-data-practitioner.png"}, {"name": "Associate Google Workspace Administrator", "vendor": "Google Cloud", "group": "Google Cloud", "expires": "2029-11-07", "url": "https://www.credly.com/badges/aa7e3b80-d125-4172-b78e-6502ca9cf9a3", "image": "assets/certs/associate-google-workspace-administrator.png"}, {"name": "Cloud Digital Leader", "vendor": "Google Cloud", "group": "Google Cloud", "expires": "2029-10-10", "url": "https://www.credly.com/badges/3cfbcb77-3730-456e-8d89-f5117921fafc", "image": "assets/certs/cloud-digital-leader.png"}, {"name": "Generative AI Leader", "vendor": "Google Cloud", "group": "Google Cloud", "expires": "2029-10-11", "url": "https://www.credly.com/badges/4e53dd41-b915-456a-b828-f0757cc0a676", "image": "assets/certs/generative-ai-leader.png"}, {"name": "AWS Certified DevOps Engineer \u00b7 Professional", "vendor": "AWS", "group": "AWS", "expires": "2029-09-01", "url": "https://www.credly.com/badges/9455f4b9-a3ec-4fd2-8cdd-262543e0cee3", "image": "assets/certs/aws-certified-devops-engineer---professional.png"}, {"name": "AWS Certified Generative AI Developer \u00b7 Professional", "vendor": "AWS", "group": "AWS", "expires": "2028-12-16", "url": "https://www.credly.com/badges/581f2ca0-4436-4d60-be80-16bdb697bad0", "image": "assets/certs/aws-certified-generative-ai-developer---professi.png"}, {"name": "AWS Certified Solutions Architect \u00b7 Professional", "vendor": "AWS", "group": "AWS", "expires": "2029-08-30", "url": "https://www.credly.com/badges/0eb1add4-3534-43c5-8fda-4863d382ea8b", "image": "assets/certs/aws-certified-solutions-architect---professional.png"}, {"name": "AWS Certified Advanced Networking \u00b7 Specialty", "vendor": "AWS", "group": "AWS", "expires": "2029-01-01", "url": "https://www.credly.com/badges/efa833a2-2bff-4c2a-aa11-2f3c4b2ad2bd", "image": "assets/certs/aws-certified-advanced-networking---specialty.png"}, {"name": "AWS Certified Database \u00b7 Specialty", "vendor": "AWS", "group": "AWS", "expires": "2027-04-28", "url": "https://www.credly.com/badges/5d77085e-9f3c-4263-87b2-a2016611ca03", "image": "assets/certs/aws-certified-database---specialty.png"}, {"name": "AWS Certified Machine Learning \u00b7 Specialty", "vendor": "AWS", "group": "AWS", "expires": "2028-12-05", "url": "https://www.credly.com/badges/aa484190-cc86-4f56-ac07-cc5be21156fa", "image": "assets/certs/aws-certified-machine-learning---specialty.png"}, {"name": "AWS Certified Security \u00b7 Specialty", "vendor": "AWS", "group": "AWS", "expires": "2027-01-17", "url": "https://www.credly.com/badges/aec58382-c9cb-4813-8228-1700383e7d6f", "image": "assets/certs/aws-certified-security---specialty.png"}, {"name": "AWS Certified CloudOps Engineer \u00b7 Associate", "vendor": "AWS", "group": "AWS", "expires": "2029-09-01", "url": "https://www.credly.com/badges/e0af54d9-961d-41da-830b-5dbb636c7a36", "image": "assets/certs/aws-certified-cloudops-engineer---associate.png"}, {"name": "AWS Certified Data Engineer \u00b7 Associate", "vendor": "AWS", "group": "AWS", "expires": "2028-12-16", "url": "https://www.credly.com/badges/74d05960-f94a-40ce-a752-4bc64d209547", "image": "assets/certs/aws-certified-data-engineer---associate.png"}, {"name": "AWS Certified Developer \u00b7 Associate", "vendor": "AWS", "group": "AWS", "expires": "2029-09-01", "url": "https://www.credly.com/badges/795f403a-4e60-4e66-9687-1579c5a3fa05", "image": "assets/certs/aws-certified-developer---associate.png"}, {"name": "AWS Certified Machine Learning Engineer \u00b7 Associate", "vendor": "AWS", "group": "AWS", "expires": "2028-12-16", "url": "https://www.credly.com/badges/14e998a2-36de-4ee2-8cc4-ed108cddb16f", "image": "assets/certs/aws-certified-machine-learning-engineer---associ.png"}, {"name": "AWS Certified Solutions Architect \u00b7 Associate", "vendor": "AWS", "group": "AWS", "expires": "2029-08-30", "url": "https://www.credly.com/badges/406ecd64-8dad-46ef-9e01-c3d6ad548024", "image": "assets/certs/aws-certified-solutions-architect---associate.png"}, {"name": "AWS Certified AI Practitioner", "vendor": "AWS", "group": "AWS", "expires": "2028-12-16", "url": "https://www.credly.com/badges/ffacdb89-174d-403a-89b1-31f72de88908", "image": "assets/certs/aws-certified-ai-practitioner.png"}, {"name": "AWS Certified Cloud Practitioner", "vendor": "AWS", "group": "AWS", "expires": "2029-09-01", "url": "https://www.credly.com/badges/8f1010b9-3e30-4d65-abf4-0d8423b58e2f", "image": "assets/certs/aws-certified-cloud-practitioner.png"}, {"name": "NVIDIA-Certified Associate: Generative AI Multimodal", "vendor": "NVIDIA", "group": "NVIDIA & Security", "expires": "2027-12-05", "url": "https://www.credly.com/badges/69c808b7-6d64-4cea-b7e9-a24cfc3f361b", "image": "assets/certs/nvidia-certified-associate-generative-ai-multimo.png"}, {"name": "CompTIA Security+", "vendor": "CompTIA", "group": "NVIDIA & Security", "expires": "2027-01-25", "url": "https://www.credly.com/badges/a747a683-9c6f-4119-a863-9b40fff7a19c", "image": "assets/certs/comptia-security-plus-ce.png"}]}</script>
+  <script src="app.js?v=20261108a"></script>
 </body>
-
 </html>
